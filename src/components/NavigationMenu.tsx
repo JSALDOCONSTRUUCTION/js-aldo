@@ -43,7 +43,7 @@ const NavigationMenu = () => {
           </li>
           <li>
             <Link
-              href="#"
+              href="/aboutus"
               className="text-gray-800 hover:text-gray-600 font-bold"
             >
               ABOUT US

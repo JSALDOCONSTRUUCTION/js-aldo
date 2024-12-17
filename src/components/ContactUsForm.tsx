@@ -47,9 +47,9 @@ const ContactUsForm = () => {
   };
 
   return (
-    <section className="contact-us-form py-6 px-4 bg-black">
+    <section className="contact-us-form py-6 px-4 bg-black xl-custom:px-10">
       <div className="container mx-auto flex justify-center items-center">
-        <div className="py-6 px-4 w-full">
+        <div className="py-6 px-4 w-full xl-custom:px-72 xl-custom:pt-20">
           <div className="bg-white p-6 rounded-md shadow-lg w-full">
             <h2 className="text-3xl font-bold mb-4 text-black">
               Book A Service

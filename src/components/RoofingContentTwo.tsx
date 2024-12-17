@@ -70,7 +70,7 @@ const RoofingContentTwo = () => {
         {/* Left Image */}
         <div className="flex-1 flex justify-center">
           <Image
-            src="/roofing4.jpg"
+            src="/roofing4.JPG"
             alt="Roofing Services"
             width={450} // Set explicit width for optimization
             height={300} // Set explicit height for optimization

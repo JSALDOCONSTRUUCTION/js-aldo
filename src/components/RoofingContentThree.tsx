@@ -23,7 +23,7 @@ const RoofingContentThree: React.FC = () => {
           </div>
 
           {/* Flex container for content and images */}
-          <div className="flex flex-col lg:flex-row mt-6 gap-6">
+          <div className="flex flex-col lg:flex-row mt-6 gap-32">
             {/* Content Section */}
             <div className="flex-1 text-gray-700 leading-relaxed text-center sm:text-left sm:ml-4 md:ml-0">
               <p>

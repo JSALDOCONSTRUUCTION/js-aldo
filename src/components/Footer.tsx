@@ -1,12 +1,11 @@
 import React from 'react';
 import Socialicons from './Socialicons';
-import Copyrights from './Copyrights';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white py-12">
+    <footer className="bg-black text-white py-12 border-t border-white">
       <div className="bg-black text-white py-12">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
@@ -155,7 +154,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <Copyrights />
     </footer>
   );
 };

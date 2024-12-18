@@ -8,18 +8,20 @@ import LogoSection from '@/components/LogoSection';
 import SwiperSlider from '@/components/SwiperSlider';
 import ReviewsSlider from '@/components/ReviewsSlider';
 import ContactUsForm from '@/components/ContactUsForm';
+import Copyrights from '@/components/Copyrights';
 
 export default function Home() {
   return (
     <>
       <Header />
-      <SwiperSlider />  
+      <SwiperSlider />
       <ServicesSection />
       <RoofingSection />
       <LogoSection />
       <ReviewsSlider />
       <ContactUsForm />
       <Footer />
+      <Copyrights />
     </>
   );
 }

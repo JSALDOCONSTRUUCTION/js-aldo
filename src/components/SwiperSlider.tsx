@@ -1,15 +1,20 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css'; // Import the Swiper styles
-import Image from 'next/image'; // Import Next.js Image for optimization
+import { Swiper, SwiperSlide } from 'swiper/react'; // React components
+import 'swiper/css'; // Swiper core styles
+import 'swiper/css/navigation'; // Navigation styles
+import 'swiper/css/autoplay'; // Autoplay styles (optional)
+
+import { Navigation, Autoplay } from 'swiper/modules'; // Import modules correctly for Swiper >= v7
+import Image from 'next/image'; // Next.js Image optimization
 
 const SwiperSlider: React.FC = () => {
   return (
     <section className="p-0 m-0 bg-gray-100">
       <Swiper
+        modules={[Navigation, Autoplay]} // Use modules directly in Swiper
         spaceBetween={0} // Remove space between slides
         slidesPerView={1} // One slide at a time
-        navigation
+        navigation // Enable navigation
         loop
         autoplay={{ delay: 5000 }} // Auto-slide every 5 seconds
         className="mySwiper"
@@ -23,7 +28,7 @@ const SwiperSlider: React.FC = () => {
               layout="fill" // Fills the container while maintaining the aspect ratio
               objectFit="cover" // Ensures the image covers the area without distortion
             />
-            <p className="absolute text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold left-4 top-1/4 text-shadow">
+            <p className="absolute text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold left-4 top-1/4 text-shadow pl-10">
               Elevate Your
               <br /> Home with
               <br /> Superior Roofing
@@ -40,7 +45,7 @@ const SwiperSlider: React.FC = () => {
               layout="fill" // Fills the container while maintaining the aspect ratio
               objectFit="cover" // Ensures the image covers the area without distortion
             />
-            <p className="absolute text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold left-4 top-1/4 text-shadow">
+            <p className="absolute text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold left-4 top-1/4 text-shadow pl-10">
               Professional
               <br /> Windows for <br />
               Safety and Style
@@ -57,7 +62,7 @@ const SwiperSlider: React.FC = () => {
               layout="fill" // Fills the container while maintaining the aspect ratio
               objectFit="cover" // Ensures the image covers the area without distortion
             />
-            <p className="absolute text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold left-4 top-1/4 text-shadow">
+            <p className="absolute text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold left-4 top-1/4 text-shadow pl-10">
               Our Best Roofing,
               <br /> Windows and <br />
               Gutter Services
@@ -65,6 +70,10 @@ const SwiperSlider: React.FC = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+
+      {/* Navigation Buttons */}
+    
+    
     </section>
   );
 };

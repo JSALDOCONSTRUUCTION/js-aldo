@@ -1,13 +1,15 @@
-"use client"
+'use client';
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules'; // Correct import
 import 'swiper/css'; // Import Swiper styles
+import 'swiper/css/navigation'; // Import Swiper navigation styles
 import { FaStar, FaQuoteLeft } from 'react-icons/fa'; // Icon imports
 
 const ReviewsSlider: React.FC = () => {
   return (
-    <section className="p-8 bg-white-100">
+    <section className="p-8 bg-white-100 border-b-2 border-gray-300">
       <h2 className="text-5xl font-bold text-center mb-4">
         WHAT OUR CUSTOMER SAY
       </h2>
@@ -24,8 +26,9 @@ const ReviewsSlider: React.FC = () => {
       <Swiper
         spaceBetween={50} // Space between slides
         slidesPerView={1} // One slide at a time
-        navigation
-        loop
+        navigation // Enable navigation
+        loop // Loop slides
+        modules={[Navigation]} // Register the Navigation module
         className="mySwiper"
       >
         <SwiperSlide>

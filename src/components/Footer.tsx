@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white py-12 border-t border-white">
-      <div className="bg-black text-white py-12">
+    <footer className="bg-[#0e1642] text-white py-12 border-t border-white/20">
+      <div className="bg-[#0e1642] text-white py-6">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
             {/* First Column: Logo and Social Media */}
@@ -29,7 +29,9 @@ const Footer: React.FC = () => {
 
             {/* Second Column: Other Services */}
             <div className="flex flex-col space-y-2">
-              <h3 className="text-lg font-semibold">Other Services</h3>
+              <h3 className="text-lg font-semibold text-[#a53748]">
+                OTHER SERVICES
+              </h3>
               <ul className="space-y-1">
                 <li>
                   <a href="/roofing" className="text-white hover:text-gray-300">
@@ -69,30 +71,32 @@ const Footer: React.FC = () => {
 
             {/* Third Column: Contact Us */}
             <div className="flex flex-col space-y-2">
-              <h3 className="text-lg font-semibold">Contact Us</h3>
-              <p className="text-sm">
+              <h3 className="text-lg font-semibold mb-3 text-[#a53748]">
+                CONTACT US
+              </h3>
+              <p className="text-sm pb-3">
                 <span className="text-red-500">Phone:</span>{' '}
                 <span className="text-white">973-445-4511</span>
               </p>
-              <p className="text-sm">
+              <p className="text-sm pb-3">
                 <span className="text-red-500">Email:</span>{' '}
                 <span className="text-white">
                   jvanburen@jsaldoconstruction.com
                 </span>
               </p>
-              <p className="text-sm">
+              <p className="text-sm pb-3">
                 <span className="text-red-500">Email:</span>{' '}
                 <span className="text-white">
                   office@jsaldoconstruction.com
                 </span>
               </p>
-              <p className="text-sm">
+              <p className="text-sm pb-3">
                 <span className="text-red-500">Web:</span>{' '}
                 <a href="http://jsaldoconstruction.com" className="text-white">
                   jsaldoconstruction.com
                 </a>
               </p>
-              <p className="text-sm">
+              <p className="text-sm pb-3">
                 <span className="text-red-500">REG.NO:</span>{' '}
                 <span className="text-white">13VH031133100</span>
               </p>
@@ -100,7 +104,10 @@ const Footer: React.FC = () => {
 
             {/* Fourth Column: Quick Links */}
             <div className="flex flex-col space-y-2">
-              <h3 className="text-lg font-semibold">Quick Links</h3>
+              <h3 className="text-lg font-semibold text-[#a53748]">
+                QUICK LINKS
+              </h3>
+
               <ul className="space-y-1">
                 <li>
                   <Link href="/" className="text-white hover:text-gray-300">

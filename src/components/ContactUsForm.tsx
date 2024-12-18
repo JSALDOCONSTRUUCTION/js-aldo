@@ -1,6 +1,7 @@
-"use client"
+'use client';
 
 import { useState, ChangeEvent, FormEvent } from 'react';
+import LeftContent from './LeftContent'; // Import the LeftContent component
 
 interface FormData {
   firstName: string;
@@ -23,7 +24,7 @@ const ContactUsForm = () => {
 
   const services = [
     'Commercial Roofing',
-    'Residential Roofingl',
+    'Residential Roofing',
     'Gutter',
     'Siding',
     'Windows',
@@ -47,18 +48,24 @@ const ContactUsForm = () => {
   };
 
   return (
-    <section className="contact-us-form py-6 px-4 bg-black xl-custom:px-10">
-      <div className="container mx-auto flex justify-center items-center">
-        <div className="py-6 px-4 w-full xl-custom:px-72 xl-custom:pt-20">
+    <section
+      className="contact-us-form m-20 py-6 px-4 bg-cover bg-no-repeat xl-custom:px-10 relative rounded-2xl"
+      style={{
+        backgroundColor: '#0e1642', // Replace background image with the color
+      }}
+    >
+      {/* Blue color filter overlay */}
+      <div className="absolute inset-0 bg-[#0e1642] opacity-60 rounded-2xl"></div>
+
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-start shadow-lg relative">
+        {/* Left content */}
+        <LeftContent /> {/* Using the LeftContent component */}
+        {/* Right-side form */}
+        <div className="w-full md:w-1/2 py-6 px-4 min-w-min">
           <div className="bg-white p-6 rounded-md shadow-lg w-full">
             <h2 className="text-3xl font-bold mb-4 text-black">
-              Book A Service
+              Free Estimation
             </h2>
-            <p className="text-xl mb-4 text-black">Free Estimation</p>
-            <p className="text-lg mb-6 text-black">
-              Please fill out the form and provide details of your request, we
-              will reply back soon.
-            </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               {/* First Name */}
@@ -70,7 +77,7 @@ const ContactUsForm = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First Name"
-                  className="w-full p-3 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
+                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
                   required
                 />
               </div>
@@ -84,7 +91,7 @@ const ContactUsForm = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Last Name"
-                  className="w-full p-3 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
+                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
                   required
                 />
               </div>
@@ -98,7 +105,7 @@ const ContactUsForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email Address"
-                  className="w-full p-3 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
+                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
                   required
                 />
               </div>
@@ -112,7 +119,7 @@ const ContactUsForm = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Phone Number"
-                  className="w-full p-3 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
+                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
                   required
                 />
               </div>
@@ -124,7 +131,7 @@ const ContactUsForm = () => {
                   name="service"
                   value={formData.service}
                   onChange={handleChange}
-                  className="w-full p-3 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
+                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
                   required
                 >
                   <option value="">Select a Service</option>
@@ -144,8 +151,8 @@ const ContactUsForm = () => {
                   value={formData.requirements}
                   onChange={handleChange}
                   placeholder="Your Requirements..."
-                  className="w-full p-3 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
-                  rows={5}
+                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
+                  rows={2}
                   required
                 ></textarea>
               </div>

@@ -34,6 +34,7 @@ export async function POST(req: Request) {
 
     // Handle any errors returned from Resend API
     if (error) {
+      console.log(resend);
       console.error('Resend API Error:', error);
       return NextResponse.json(
         { success: false, error: error.message || 'An error occurred' },

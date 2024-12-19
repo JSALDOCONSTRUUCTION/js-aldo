@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend('re_P9xS2eFp_4NP8vyoDUCNrSAAuug6Mwpyt');
+console.log('RESEND_API_KEY:', 're_P9xS2eFp_4NP8vyoDUCNrSAAuug6Mwpyt');  // Log the API key (don't expose it publicly)
+
 
 export async function POST(req: Request) {
   try {
@@ -34,7 +36,6 @@ export async function POST(req: Request) {
 
     // Handle any errors returned from Resend API
     if (error) {
-      console.log(resend);
       console.error('Resend API Error:', error);
       return NextResponse.json(
         { success: false, error: error.message || 'An error occurred' },

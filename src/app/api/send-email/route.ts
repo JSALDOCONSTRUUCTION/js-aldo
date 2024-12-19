@@ -20,10 +20,14 @@ export async function POST(req: Request) {
       <p><strong>Requirements:</strong> ${requirements}</p>
     `;
 
-    // Send the email using Resend SDK
+    // Send the email using Resend SDK to multiple recipients
     const { data, error } = await resend.emails.send({
-      from: 'https://www.jsaldoconstruction.com', // Sender email
-      to: 'itz.me.farhan6710@gmail.com', // Recipient email
+      from: 'office@jsaldoconstruction.com', // Sender email
+      to: [
+        'wassay@compumaxllc.com',
+        'office@jsaldoconstruction.com',
+        'jvanburen@jsaldoconstruction.com',
+      ], // Array of recipient emails
       subject: `New Contact Us Submission from ${firstName} ${lastName}`, // Subject
       html: emailContent, // HTML email content
     });

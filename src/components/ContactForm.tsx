@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Oval } from 'react-loader-spinner'; // Loader import
 
 // Define the FormData type for form state
 interface FormData {
@@ -20,6 +21,7 @@ interface ContactFormProps {
     >
   ) => void; // Function to handle input changes
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void; // Function to handle form submission
+  loading: boolean; // Loading state passed from parent
 }
 
 const ContactForm: FC<ContactFormProps> = ({
@@ -27,6 +29,7 @@ const ContactForm: FC<ContactFormProps> = ({
   services,
   handleChange,
   handleSubmit,
+  loading, // Access the loading state
 }) => {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
@@ -121,14 +124,26 @@ const ContactForm: FC<ContactFormProps> = ({
         />
       </div>
 
-      {/* Submit Button */}
+      {/* Submit Button or Loader */}
       <div className="flex justify-end">
-        <button
-          type="submit"
-          className="w-40 py-3 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700 transition-colors"
-        >
-          Send Request
-        </button>
+        {loading ? (
+          <div className="w-40 py-3 bg-[#0e1642] text-white font-semibold rounded-md flex justify-center items-center">
+            <Oval
+              color="white"
+              strokeWidth={5}
+              height={24}
+              width={92}
+              secondaryColor="wheat"
+            />
+          </div>
+        ) : (
+          <button
+            type="submit"
+            className="w-40 py-3 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700 transition-colors"
+          >
+            Send Message
+          </button>
+        )}
       </div>
     </form>
   );

@@ -1,5 +1,4 @@
-"use client"
-
+'use client';
 
 import { useState, ChangeEvent } from 'react';
 import LeftContent from './LeftContent';
@@ -23,6 +22,7 @@ const ContactUsForm = () => {
     service: '',
     requirements: '',
   });
+  const [loading, setLoading] = useState(false); // Manage loading state
 
   const services = [
     'Commercial Roofing',
@@ -45,6 +45,10 @@ const ContactUsForm = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Set loading to true when form submission starts
+    setLoading(true);
+
     try {
       const response = await fetch('/api/send-email', {
         method: 'POST',
@@ -68,10 +72,13 @@ const ContactUsForm = () => {
     } catch (error) {
       console.error(error);
       alert('An error occurred. Please try again.');
+    } finally {
+      // Set loading to false after form submission
+      setLoading(false);
     }
   };
 
-  return ( 
+  return (
     <section
       className="contact-us-form m-0 sm:m-20 py-6 px-4 bg-cover bg-no-repeat xl-custom:px-10 relative sm:rounded-2xl"
       style={{
@@ -92,6 +99,7 @@ const ContactUsForm = () => {
               services={services}
               handleChange={handleChange}
               handleSubmit={handleSubmit}
+              loading={loading} // Pass loading state to child
             />
           </div>
         </div>

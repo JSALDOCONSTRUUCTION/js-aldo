@@ -9,7 +9,7 @@ interface FormData {
   phone: string;
   service: string;
   requirements: string;
-}
+} 
 
 // Define the props for the ContactForm component
 interface ContactFormProps {

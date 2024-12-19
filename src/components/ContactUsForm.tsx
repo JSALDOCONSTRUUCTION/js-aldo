@@ -1,5 +1,6 @@
 "use client"
 
+
 import { useState, ChangeEvent } from 'react';
 import LeftContent from './LeftContent';
 import ContactForm from './ContactForm';

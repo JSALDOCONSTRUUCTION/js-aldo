@@ -1,3 +1,4 @@
+import Copyrights from '@/components/Copyrights'
 import FixedButtons from '@/components/FixedButtons'
 import Footer from '@/components/Footer'
 import Gallery from '@/components/gallery'
@@ -11,6 +12,7 @@ const page = () => {
       <FixedButtons />
       <Gallery />
       <Footer />
+      <Copyrights />
     </>
   );
 }

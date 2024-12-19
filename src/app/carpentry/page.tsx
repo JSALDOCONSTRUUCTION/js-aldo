@@ -1,4 +1,5 @@
 import ContactUsForm from '@/components/ContactUsForm';
+import Copyrights from '@/components/Copyrights';
 import FixedButtons from '@/components/FixedButtons';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
@@ -75,6 +76,7 @@ const page = () => {
         </div>
         <ContactUsForm />
         <Footer />
+        <Copyrights />
       </section>
     </>
   );

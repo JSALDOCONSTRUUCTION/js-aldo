@@ -2,6 +2,7 @@ import React from 'react';
 
 const ComingSoon: React.FC = () => {
   return (
+    
     <div
       className="relative w-full h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/images/coming-soon.jpg')" }}

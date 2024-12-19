@@ -1,7 +1,6 @@
-'use client';
-
-import { useState, ChangeEvent, FormEvent } from 'react';
-import LeftContent from './LeftContent'; // Import the LeftContent component
+import { useState, ChangeEvent } from 'react';
+import LeftContent from './LeftContent';
+import ContactForm from './ContactForm';
 
 interface FormData {
   firstName: string;
@@ -41,132 +40,56 @@ const ContactUsForm = () => {
     });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission, e.g., send form data to an API or email
-    console.log(formData);
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit the form');
+      }
+
+      alert('Form submitted successfully!');
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        service: '',
+        requirements: '',
+      });
+    } catch (error) {
+      console.error(error);
+      alert('An error occurred. Please try again.');
+    }
   };
 
   return (
     <section
-      className="contact-us-form m-20 py-6 px-4 bg-cover bg-no-repeat xl-custom:px-10 relative rounded-2xl"
+      className="contact-us-form m-0 sm:m-20 py-6 px-4 bg-cover bg-no-repeat xl-custom:px-10 relative sm:rounded-2xl"
       style={{
-        backgroundColor: '#0e1642', // Replace background image with the color
+        backgroundColor: '#0e1642',
       }}
     >
-      {/* Blue color filter overlay */}
-      <div className="absolute inset-0 bg-[#0e1642] opacity-60 rounded-2xl"></div>
+      <div className="absolute inset-0 bg-[#0e1642] opacity-60 sm:rounded-2xl"></div>
 
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start shadow-lg relative">
-        {/* Left content */}
-        <LeftContent /> {/* Using the LeftContent component */}
-        {/* Right-side form */}
+        <LeftContent />
         <div className="w-full md:w-1/2 py-6 px-4 min-w-min">
           <div className="bg-white p-6 rounded-md shadow-lg w-full">
             <h2 className="text-3xl font-bold mb-4 text-black">
               Free Estimation
             </h2>
-
-            <form onSubmit={handleSubmit} className="space-y-4">
-              {/* First Name */}
-              <div>
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  placeholder="First Name"
-                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
-                  required
-                />
-              </div>
-
-              {/* Last Name */}
-              <div>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  placeholder="Last Name"
-                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
-                  required
-                />
-              </div>
-
-              {/* Email Address */}
-              <div>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="Email Address"
-                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
-                  required
-                />
-              </div>
-
-              {/* Phone Number */}
-              <div>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Phone Number"
-                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
-                  required
-                />
-              </div>
-
-              {/* Service Dropdown */}
-              <div>
-                <select
-                  id="service"
-                  name="service"
-                  value={formData.service}
-                  onChange={handleChange}
-                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
-                  required
-                >
-                  <option value="">Select a Service</option>
-                  {services.map((service, index) => (
-                    <option key={index} value={service}>
-                      {service}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Requirements Textarea */}
-              <div>
-                <textarea
-                  id="requirements"
-                  name="requirements"
-                  value={formData.requirements}
-                  onChange={handleChange}
-                  placeholder="Your Requirements..."
-                  className="w-full p-3 py-1 bg-white border-2 border-[#cccccc] rounded-md focus:outline-none"
-                  rows={2}
-                  required
-                ></textarea>
-              </div>
-
-              {/* Submit Button */}
-              <div className="flex justify-end">
-                <button
-                  type="submit"
-                  className="w-40 py-3 bg-[#a53748] text-white font-semibold rounded-md hover:bg-[#8b2c3d] transition-colors"
-                >
-                  Send Request
-                </button>
-              </div>
-            </form>
+            <ContactForm
+              formData={formData}
+              services={services}
+              handleChange={handleChange}
+              handleSubmit={handleSubmit}
+            />
           </div>
         </div>
       </div>

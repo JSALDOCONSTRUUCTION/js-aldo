@@ -1,5 +1,6 @@
 'use client';
 
+import Copyrights from '@/components/Copyrights';
 import FixedButtons from '@/components/FixedButtons';
 import Footer from '@/components/Footer';
 import GutterContentTwo from '@/components/GutterContentTwo';
@@ -139,6 +140,7 @@ const Roofing: React.FC = () => {
       </div>
       <GutterContentTwo />
       <Footer />
+      <Copyrights />
     </section>
   );
 };

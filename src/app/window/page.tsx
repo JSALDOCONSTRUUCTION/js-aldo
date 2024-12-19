@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import WindowContentOne from '@/components/WindowContentOne'
 import React from 'react'
 import Image from 'next/image';
+import Copyrights from '@/components/Copyrights'
 
 const page = () => {
   return (
@@ -145,6 +146,7 @@ const page = () => {
         </div>
         <WindowContentOne />
         <Footer />
+        <Copyrights />
       </section>
     </>
   );

@@ -1,3 +1,4 @@
+import Copyrights from '@/components/Copyrights';
 import FixedButtons from '@/components/FixedButtons';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
@@ -85,6 +86,7 @@ const page = () => {
       <section className="w-full h-11 bg-[#18245b]"></section>
 
       <Footer />
+      <Copyrights />
     </>
   );
 };

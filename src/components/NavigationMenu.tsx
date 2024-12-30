@@ -16,12 +16,9 @@ const NavigationMenu = () => {
             </Link>
           </li>
           <li className="relative group">
-            <Link
-              href="/services"
-              className="text-gray-800 hover:text-gray-600 font-bold"
-            >
+            <div className="text-gray-800 hover:text-gray-600 font-bold">
               SERVICES <i className="fa fa-chevron-down ml-1"></i>
-            </Link>
+            </div>
             <ul className="absolute left-0 w-48 bg-white shadow-md rounded hidden group-hover:block">
               <li>
                 <Link

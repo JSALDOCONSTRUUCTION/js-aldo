@@ -8,17 +8,7 @@ const Copyrights: React.FC = () => {
       {/* Left Side - Copyright Text */}
       <div className="flex justify-center items-center h-full w-full">
         <p className="text-md text-center">
-          © Copyright 2024 JS Aldo&apos;s Construction. Designed and developed
-          by{' '}
-          <a
-            href="https://compumaxllc.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 hover:underline"
-          >
-            Compumax LLC
-          </a>
-          .
+          © Copyright 2024 JS Aldo&apos;s Construction.All Rights Reserved.
         </p>
       </div>
     </footer>

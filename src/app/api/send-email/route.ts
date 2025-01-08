@@ -1,9 +1,17 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend('re_P9xS2eFp_4NP8vyoDUCNrSAAuug6Mwpyt');
-console.log('RESEND_API_KEY:', 're_P9xS2eFp_4NP8vyoDUCNrSAAuug6Mwpyt');  // Log the API key (don't expose it publicly)
+const resend = new Resend(process.env.RESEND_API_KEY); // Initialize Resend SDK with API key
+// Access the environment variable
+const emailTo = process.env.EMAIL_TO;
 
+// Convert the string into an array
+const recipient = emailTo
+  ? emailTo.split(',').map((email) => email.trim())
+  : [];
+const jsAldoDomain = (process.env.EMAIL_FROM as string) || '';
+
+  console.log(recipient);
 
 export async function POST(req: Request) {
   try {
@@ -24,12 +32,8 @@ export async function POST(req: Request) {
 
     // Send the email using Resend SDK to multiple recipients
     const { data, error } = await resend.emails.send({
-      from: 'office@jsaldoconstruction.com', // Sender email
-      to: [
-        'wassay@compumaxllc.com',
-        'office@jsaldoconstruction.com',
-        'jvanburen@jsaldoconstruction.com',
-      ], // Array of recipient emails
+      from: jsAldoDomain, // Sender email
+      to: recipient, // Recipient emails
       subject: `New Contact Us Submission from ${firstName} ${lastName}`, // Subject
       html: emailContent, // HTML email content
     });

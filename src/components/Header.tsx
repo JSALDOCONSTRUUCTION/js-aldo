@@ -47,6 +47,6 @@ const Header = () => {
       <SideBar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
     </header>
   );
-};
+}; 
 
 export default Header;

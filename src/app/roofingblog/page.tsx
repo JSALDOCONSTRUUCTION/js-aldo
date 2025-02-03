@@ -32,7 +32,7 @@ const page = () => {
         <h4 className="text-left ml-4 sm:ml-10 md:ml-16 lg:ml-36 font-bold text-black text-2xl sm:text-3xl md:text-4xl lg:text-4xl mt-4">
           Insurance Companies and Roof Issues
         </h4>
-        <p className="px-4 sm:px-6 md:px-8 lg:px-36 py-6">
+        <p className="px-4 sm:px-6 md:px-8 lg:px-36 py-6 text-justify">
           Many people today are experiencing the rejection of insurance claims
           due to the condition of their roofs. Insurance companies reimburse for
           more leaky roof claims than almost any other type of claim, leading to
@@ -47,7 +47,7 @@ const page = () => {
         <h4 className="text-left ml-4 sm:ml-10 md:ml-16 lg:ml-36 font-bold text-black text-2xl sm:text-3xl md:text-4xl lg:text-4xl mt-4">
           Roofing Systems
         </h4>
-        <p className="px-4 sm:px-6 md:px-8 lg:px-36 py-6">
+        <p className="px-4 sm:px-6 md:px-8 lg:px-36 py-6 text-justify">
           A roofing system is defined as a complete job using most of one
           manufacturer&apos;s components. From the ice and water shield to the
           ridge caps and ridge venting, all components should be made by one
@@ -75,7 +75,7 @@ const page = () => {
           <li>Pipe collar boots</li>
         </ul>
 
-        <p className="px-4 sm:px-6 md:px-8 lg:px-36 py-6">
+        <p className="px-4 sm:px-6 md:px-8 lg:px-36 py-6 text-justify">
           Utilizing a complete roofing system will entitle you to purchase a
           system warranty for a small additional charge, which is usually
           transferable within a certain time frame. This warranty is pro-rated

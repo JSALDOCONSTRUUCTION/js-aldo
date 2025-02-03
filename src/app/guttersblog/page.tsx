@@ -24,7 +24,7 @@ const page = () => {
         </span>
       </section>
 
-      <section className="py-8 px-4 sm:px-6 md:px-8 lg:px-8">
+      <section className="py-8 px-4 sm:px-6 md:px-8 lg:px-8 text-justify">
         <h3 className="text-left ml-4 sm:ml-10 md:ml-16 lg:ml-36 font-bold text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
           Gutter Services by JS Aldo&apos;s Construction
         </h3>{' '}

@@ -24,7 +24,7 @@ const page = () => {
         </span>
       </section>
 
-      <section className="py-8 px-4 sm:px-6 md:px-8 lg:px-8">
+      <section className="py-8 px-4 sm:px-6 md:px-8 lg:px-8 text-justify">
         <p className="px-4 sm:px-6 md:px-8 lg:px-36 py-6">
           Consumers today have many choices available to them to beautify the
           exterior of their homes. Modern plastics are more fade resistant and

@@ -118,7 +118,7 @@ const Roofing: React.FC = () => {
         {/* Left Image */}
         <div className="flex-1 flex justify-center">
           <Image
-            src="/roofing4.jpg"
+            src="/gallery/image9.jpg"
             alt="Roofing Services"
             width={450} // Set the width of the image
             height={300} // Set the height of the image

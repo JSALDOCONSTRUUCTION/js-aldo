@@ -153,7 +153,7 @@ const Footer: React.FC = () => {
                     href="/contact-us"
                     className="text-white hover:text-gray-300"
                   >
-                    Contactt
+                    Contact
                   </Link>
                 </li>
               </ul>

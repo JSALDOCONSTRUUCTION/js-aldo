@@ -33,7 +33,7 @@ const Roofing: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="mt-6 text-gray-700 leading-relaxed text-center sm:text-left">
+          <div className="mt-6 text-gray-700 leading-relaxed text-center text-justify">
             <p className="mt-4">
               Gutter replacement is essential for maintaining your home&apos;s
               protection and ensuring efficient water management. At Aldo
@@ -75,7 +75,7 @@ const Roofing: React.FC = () => {
             <div className="mx-2 bg-red-500 w-1 h-1"></div>
             <div className="border-t-2 border-black/60 w-1/6"></div>
           </div>
-          <p className="mt-6 text-gray-700 leading-relaxed text-center sm:text-left">
+          <p className="mt-6 text-gray-700 leading-relaxed text-center text-justify">
             Regular gutter cleaning is vital for preventing water damage and
             ensuring your home&apos;s drainage system operates efficiently. At
             JS Aldo&apos;s Construction, we provide professional gutter cleaning

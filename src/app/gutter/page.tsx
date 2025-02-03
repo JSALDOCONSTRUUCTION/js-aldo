@@ -54,7 +54,7 @@ const Roofing: React.FC = () => {
 
         {/* Right Content */}
         <div className="flex-1 px-4 lg:px-20">
-          <p className="mt-6 text-gray-700 leading-relaxed text-center sm:text-left">
+          <p className="mt-6 text-gray-700 leading-relaxed text-center text-justify">
             JS Aldo&apos;s Construction offers replacement gutter systems of all
             sizes, materials, and colors. <br /> <br />
             5, 6 and 7” K Style Guttersbr&apos;
@@ -122,7 +122,7 @@ const Roofing: React.FC = () => {
             <div className="mx-2 bg-red-500 w-1 h-1"></div>
             <div className="border-t-2 border-black/60 w-1/6"></div>
           </div>
-          <p className="mt-6 text-gray-700 leading-relaxed text-center sm:text-left">
+          <p className="mt-6 text-gray-700 leading-relaxed text-center text-justify">
             New gutters are crucial for protecting your home from water damage
             and ensuring effective drainage. At JS Aldo&apos;s Construction, we
             specialize in installing high-quality new gutters that safeguard

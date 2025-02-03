@@ -127,7 +127,7 @@ const Roofing: React.FC = () => {
             <div className="border-t-2 border-black/60 w-1/6"></div>
           </div>
 
-          <p className="mt-4 text-gray-700 leading-relaxed text-center sm:text-left">
+          <p className="mt-4 text-gray-700 leading-relaxed text-center text-justify ">
             Vinyl Siding Vinyl is the most popular home improvement in the U.S.
             today. It is durable, colorfast, and comes in many styles and
             colors. The industry is so robust that it predicts 25.8 million
@@ -171,7 +171,7 @@ const Roofing: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="mt-6 text-gray-700 leading-relaxed text-center sm:text-left">
+          <div className="mt-6 text-gray-700 leading-relaxed text-center text-justify">
             <p className="mt-4">
               In many cases, siding can be installed over most existing types of
               exterior treatments. However, it is always ideal to remove the
@@ -191,9 +191,10 @@ const Roofing: React.FC = () => {
           </div>
         </div>
       </div>
+
       <div className="flex flex-col lg:flex-row-reverse items-center gap-8 px-8 py-12">
         {/* Right Image */}
-        <div className="relative">
+        <div className="flex-1 flex justify-center">
           <Image
             src="/siding7.jpg"
             alt="Roofing Services"
@@ -205,30 +206,32 @@ const Roofing: React.FC = () => {
 
         {/* Left Content */}
         <div className="flex-1 px-4 lg:px-20">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
-            J.S. Aldo’s offers siding and trim packages for all Budgets.
-          </h2>
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
+    J.S. Aldo’s offers siding and trim packages for all Budgets.
+  </h2>
 
-          <div className="flex justify-center items-center mt-2">
-            {/* Underline with dot */}
-            <div className="border-t-2 border-black/60 w-1/6"></div>
-            <div className="mx-2 bg-red-500 w-1 h-1"></div>
-            <div className="border-t-2 border-black/60 w-1/6"></div>
-          </div>
+  <div className="flex justify-center items-center mt-2">
+    {/* Underline with dot */}
+    <div className="border-t-2 border-black/60 w-1/6"></div>
+    <div className="mx-2 bg-red-500 w-1 h-1"></div>
+    <div className="border-t-2 border-black/60 w-1/6"></div>
+  </div>
 
-          {/* Content Section */}
-          <div className="mt-6 text-gray-700 leading-relaxed text-center sm:text-left ml-0 sm:ml-64">
-            <p className="mt-4">
-              • We offer siding and trim packages for all budgets. <br />
-              • Fiber Cement (Hardie) <br />
-              • Vinyl (Certainteed, Royal, Etc.) <br />
-              • PVC Trim Boards <br />
-              • Aluminum window and fascia wrap <br />
-              • House wrap (HDPE) (Tyvek) <br />• Damage repair
-            </p>
-          </div>
-        </div>
+  {/* Content Section */}
+  <div className="mt-6 text-gray-700 leading-relaxed text-center sm:ml-4">
+    <p className="mt-4">
+      • We offer siding and trim packages for all budgets. <br />
+      • Fiber Cement (Hardie) <br />
+      • Vinyl (Certainteed, Royal, Etc.) <br />
+      • PVC Trim Boards <br />
+      • Aluminum window and fascia wrap <br />
+      • House wrap (HDPE) (Tyvek) <br />• Damage repair
+    </p>
+  </div>
+</div>
+
       </div>
+      
       <ContactUsForm />
       <Footer />
       <Copyrights />

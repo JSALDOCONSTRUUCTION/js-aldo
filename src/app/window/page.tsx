@@ -130,7 +130,7 @@ const page = () => {
               <div className="border-t-2 border-black/60 w-1/6"></div>
             </div>
 
-            <p className="mt-4 text-gray-700 leading-relaxed text-center text-justify">
+            <p className="mt-4 text-gray-700 leading-relaxed text-justify">
               Here are some window tips. In reality the window is as good as the
               installation. If you check window reviews of vinyl replacement
               windows the common complaint is stickiness, window malfunction,

@@ -19,7 +19,7 @@ const RoofingSection: React.FC = () => {
           Our professional team provides quality roofing services
         </h2>
 
-        <p className="text-sm md:text-base text-left pr-4 sm:pr-6 md:pr-8 lg:pr-10">
+        <p className="text-sm md:text-base pr-4 sm:pr-6 md:pr-8 lg:pr-10 text-justify">
           Our professional team delivers top-quality roofing services,
           specializing in installation, repairs, and maintenance. With a
           commitment to excellence, we ensure durable and reliable roofs

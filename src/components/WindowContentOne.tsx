@@ -35,7 +35,7 @@ const WindowContentOne = () => {
           </div>
 
           {/* Content Section */}
-          <p className="mt-4 text-gray-700 leading-relaxed text-center text-justify">
+          <p className="mt-4 text-gray-700 leading-relaxed text-justify">
             As the season shifts, many homeowners start thinking about upgrading
             to vinyl replacement windows. When it comes to choosing new windows,
             two common questions arise: <br />
@@ -64,7 +64,7 @@ const WindowContentOne = () => {
         {/* Left Image */}
         <div className="flex-1 flex justify-center">
           <Image
-            src="/roofing4.jpg"
+            src="/win1.jpg"
             alt="Roofing Services"
             width={450} // Set the width for the image
             height={300} // Set the height for the image
@@ -84,7 +84,7 @@ const WindowContentOne = () => {
             <div className="border-t-2 border-black/60 w-1/6"></div>
           </div>
 
-          <p className="mt-4 text-gray-700 leading-relaxed text-center text-justify">
+          <p className="mt-4 text-gray-700 leading-relaxed text-justify">
             Discover energy-efficient replacement windows that can enhance your
             home&apos;s comfort and efficiency. Click below to find Energy Star
             certified windows that meet high performance standards:

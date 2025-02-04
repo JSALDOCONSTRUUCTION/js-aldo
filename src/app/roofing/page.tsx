@@ -66,7 +66,7 @@ const Roofing: React.FC = () => {
             <div className="mx-2 bg-red-500 w-1 h-1"></div>
             <div className="border-t-2 border-black/60 w-1/6"></div>
           </div>
-          <p className="mt-6 text-gray-700 leading-relaxed text-center text-justify">
+          <p className="mt-6 text-gray-700 leading-relaxed text-justify">
             Your roof is your home&apos;s main defense against the elements. At
             JS Aldo&apos;s Construction, we will help you choose the best roof
             for performance and to fit within your budget. With our expert
@@ -137,7 +137,7 @@ const Roofing: React.FC = () => {
             <div className="mx-2 bg-red-500 w-1 h-1"></div>
             <div className="border-t-2 border-black/60 w-1/6"></div>
           </div>
-          <p className="mt-6 text-gray-700 leading-relaxed text-center text-justify">
+          <p className="mt-6 text-gray-700 leading-relaxed text-justify">
             <span className="font-bold">
               JS Aldo&apos;s Construction is your go-to contractor for all
               roofing needs, whether it&apos;s single-family, multi-family, or
@@ -146,7 +146,7 @@ const Roofing: React.FC = () => {
               meet your roofing requirements.
             </span>
           </p>
-          <p className="mt-4 text-gray-700 leading-relaxed text-center text-justify">
+          <p className="mt-4 text-gray-700 leading-relaxed text-justify">
             Our premium systems can also be assembled using products from any
             manufacturer. Each manufacturer designs their shingles and
             accessories to work optimally as a system.

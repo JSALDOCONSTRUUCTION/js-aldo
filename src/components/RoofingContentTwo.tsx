@@ -89,7 +89,7 @@ const RoofingContentTwo = () => {
             <div className="border-t-2 border-black/60 w-1/6"></div>
           </div>
 
-          <p className="mt-4 text-gray-700 leading-relaxed text-center text-justify">
+          <p className="mt-4 text-gray-700 leading-relaxed text-justify">
             For immediate assistance with repairs, please call the office at
             973-445-4511 and we will respond immediately. Leaks, shingle
             blow-offs, gutter disconnections, or any maintenance

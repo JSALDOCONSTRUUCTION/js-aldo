@@ -77,23 +77,37 @@ const Footer: React.FC = () => {
               </h3>
               <p className="text-sm pb-3 flex items-center">
                 <FaPhone className="mr-2 text-red-500" />
-                <span className="text-white">973-445-4511</span>
+                <a
+                  href="tel:+19734454511"
+                  className="text-white hover:text-gray-300"
+                >
+                  973-445-4511
+                </a>
               </p>
               <p className="text-sm pb-3 flex items-center">
                 <FaEnvelope className="mr-2 text-red-500" />
-                <span className="text-white">
+                <a
+                  href="mailto:jvanburen@jsaldoconstruction.com"
+                  className="text-white hover:text-gray-300"
+                >
                   jvanburen@jsaldoconstruction.com
-                </span>
+                </a>
               </p>
               <p className="text-sm pb-3 flex items-center">
                 <FaEnvelope className="mr-2 text-red-500" />
-                <span className="text-white">
+                <a
+                  href="mailto:office@jsaldoconstruction.com"
+                  className="text-white hover:text-gray-300"
+                >
                   office@jsaldoconstruction.com
-                </span>
+                </a>
               </p>
               <p className="text-sm pb-3 flex items-center">
                 <FaGlobe className="mr-2 text-red-500" />
-                <a href="http://jsaldoconstruction.com" className="text-white">
+                <a
+                  href="http://jsaldoconstruction.com"
+                  className="text-white hover:text-gray-300"
+                >
                   jsaldoconstruction.com
                 </a>
               </p>

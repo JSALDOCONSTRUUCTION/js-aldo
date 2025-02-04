@@ -55,7 +55,7 @@ const ServicesSection: React.FC = () => {
       </h2>
 
       {/* Grid Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 text-justify">
         {services.map((service, index) => (
           <ServiceCard
             key={index}

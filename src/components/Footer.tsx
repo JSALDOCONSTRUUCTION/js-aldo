@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPhone, FaEnvelope, FaGlobe } from 'react-icons/fa'; // Importing the necessary icons
 import Socialicons from './Socialicons';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -74,24 +75,24 @@ const Footer: React.FC = () => {
               <h3 className="text-lg font-semibold mb-3 text-[#a53748]">
                 CONTACT US
               </h3>
-              <p className="text-sm pb-3">
-                <span className="text-red-500">Phone:</span>{' '}
+              <p className="text-sm pb-3 flex items-center">
+                <FaPhone className="mr-2 text-red-500" />
                 <span className="text-white">973-445-4511</span>
               </p>
-              <p className="text-sm pb-3">
-                <span className="text-red-500">Email:</span>{' '}
+              <p className="text-sm pb-3 flex items-center">
+                <FaEnvelope className="mr-2 text-red-500" />
                 <span className="text-white">
                   jvanburen@jsaldoconstruction.com
                 </span>
               </p>
-              <p className="text-sm pb-3">
-                <span className="text-red-500">Email:</span>{' '}
+              <p className="text-sm pb-3 flex items-center">
+                <FaEnvelope className="mr-2 text-red-500" />
                 <span className="text-white">
                   office@jsaldoconstruction.com
                 </span>
               </p>
-              <p className="text-sm pb-3">
-                <span className="text-red-500">Web:</span>{' '}
+              <p className="text-sm pb-3 flex items-center">
+                <FaGlobe className="mr-2 text-red-500" />
                 <a href="http://jsaldoconstruction.com" className="text-white">
                   jsaldoconstruction.com
                 </a>

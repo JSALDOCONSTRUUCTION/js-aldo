@@ -115,7 +115,7 @@ const RoofingContentThree: React.FC = () => {
               </div>
               <div className="relative">
                 <Image
-                  src="/roofing-after.jpg"
+                  src="/roofing-after.jpg" 
                   alt="After"
                   width={400} // Set explicit width for optimization
                   height={350} // Set explicit height for optimization

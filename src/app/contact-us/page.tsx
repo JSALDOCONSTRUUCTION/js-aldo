@@ -4,6 +4,7 @@ import Copyrights from '@/components/Copyrights';
 import FixedButtons from '@/components/FixedButtons';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import LogoSection from '@/components/LogoSection';
 import Image from 'next/image';
 import React from 'react';
 
@@ -31,6 +32,7 @@ const page = () => {
       <FixedButtons />
 
       <ContactUsForm />
+      <LogoSection />
       <ContactSection />
       <Footer />
       <Copyrights />

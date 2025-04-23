@@ -36,6 +36,14 @@ const NavigationMenu = () => {
                   DESIGN & DRAFTING SERVICE
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/financing"
+                  className="block px-4 py-2 hover:bg-gray-100 font-bold"
+                >
+                  FINANCING
+                </Link>
+              </li>
             </ul>
           </li>
           <li>

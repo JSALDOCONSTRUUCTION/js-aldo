@@ -29,7 +29,7 @@ const Roofing: React.FC = () => {
       <div className="text-center py-12">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#b2303c]">
           Serving all of North Jersey, parts of NY and <br />
-          Pennsylvania
+          Pennsylvaniamm
         </h1>
         <span className="relative block mt-4">
           {/* Underline with dot */}

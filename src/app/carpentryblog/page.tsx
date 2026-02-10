@@ -1,4 +1,5 @@
 import Copyrights from "@/components/Copyrights";
+import FixedButtons from "@/components/FixedButtons";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import LogoSection from "@/components/LogoSection";
@@ -8,7 +9,7 @@ const page = () => {
   return (
     <>
       <Header />
-
+ <FixedButtons />
       {/* DECKS BLOG Heading with Background */}
       <section className="bg-[#18245b] py-12">
         <h2 className="text-center text-6xl font-bold text-white">

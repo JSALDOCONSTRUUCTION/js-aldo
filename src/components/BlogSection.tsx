@@ -1,7 +1,7 @@
-'use client'; // Add this directive at the top
+"use client"; // Add this directive at the top
 
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const BlogSection: React.FC = () => {
   return (

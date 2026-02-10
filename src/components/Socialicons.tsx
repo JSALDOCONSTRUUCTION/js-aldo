@@ -1,10 +1,6 @@
-import React from 'react';
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaYoutube,
-} from 'react-icons/fa'; // Import React Icons
-import { FaXTwitter } from 'react-icons/fa6';
+import React from "react";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa"; // Import React Icons
+import { FaXTwitter } from "react-icons/fa6";
 
 const Socialicons = () => {
   return (

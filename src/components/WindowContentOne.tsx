@@ -1,7 +1,7 @@
-import React from 'react';
-import WindowsLogo from './Windowslogo';
-import ContactUsForm from './ContactUsForm';
-import Image from 'next/image';
+import React from "react";
+import WindowsLogo from "./Windowslogo";
+import ContactUsForm from "./ContactUsForm";
+import Image from "next/image";
 
 const WindowContentOne = () => {
   return (

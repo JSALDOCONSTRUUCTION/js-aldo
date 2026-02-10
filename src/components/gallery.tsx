@@ -1,16 +1,16 @@
-'use client'; // Add this directive at the top
+"use client"; // Add this directive at the top
 
-import Image from 'next/image';
-import React, { useState } from 'react';
+import Image from "next/image";
+import React, { useState } from "react";
 
 const Gallery: React.FC = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
-    null
+    null,
   );
 
   const images = Array.from(
     { length: 16 },
-    (_, index) => `/gallery/image${index + 1}.jpg`
+    (_, index) => `/gallery/image${index + 1}.jpg`,
   );
 
   const handleNext = () => {
@@ -79,7 +79,7 @@ const Gallery: React.FC = () => {
             ‹
           </button>
           <div className="relative w-full h-[500px]">
-            {' '}
+            {" "}
             {/* Define container dimensions */}
             <Image
               src={images[selectedImageIndex]}

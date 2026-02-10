@@ -1,12 +1,12 @@
-'use client'; // Enables client-side rendering for this component
+"use client"; // Enables client-side rendering for this component
 
-import React, { useState } from 'react';
-import { FaBars } from 'react-icons/fa'; // Import React Icons for the menu icon
-import Socialicons from './Socialicons';
-import NavigationMenu from './NavigationMenu';
-import SideBar from './SideBar';
-import Image from 'next/image';
-import Link from 'next/link';
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa"; // Import React Icons for the menu icon
+import Socialicons from "./Socialicons";
+import NavigationMenu from "./NavigationMenu";
+import SideBar from "./SideBar";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -47,6 +47,6 @@ const Header = () => {
       <SideBar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
     </header>
   );
-}; 
+};
 
 export default Header;

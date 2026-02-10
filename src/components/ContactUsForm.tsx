@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState, ChangeEvent } from 'react';
-import LeftContent from './LeftContent';
-import ContactForm from './ContactForm';
+import { useState, ChangeEvent } from "react";
+import LeftContent from "./LeftContent";
+import ContactForm from "./ContactForm";
 
 interface FormData {
   firstName: string;
@@ -15,26 +15,26 @@ interface FormData {
 
 const ContactUsForm = () => {
   const [formData, setFormData] = useState<FormData>({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    service: '',
-    requirements: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    service: "",
+    requirements: "",
   });
   const [loading, setLoading] = useState(false); // Manage loading state
 
   const services = [
-    'Commercial Roofing',
-    'Residential Roofing',
-    'Gutter',
-    'Siding',
-    'Windows',
-    'Other',
+    "Commercial Roofing",
+    "Residential Roofing",
+    "Gutter",
+    "Siding",
+    "Windows",
+    "Other",
   ];
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData({
@@ -50,28 +50,28 @@ const ContactUsForm = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
-        throw new Error('Failed to submit the form');
+        throw new Error("Failed to submit the form");
       }
 
-      alert('Form submitted successfully!');
+      alert("Form submitted successfully!");
       setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        service: '',
-        requirements: '',
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        service: "",
+        requirements: "",
       });
     } catch (error) {
       console.error(error);
-      alert('An error occurred. Please try again.');
+      alert("An error occurred. Please try again.");
     } finally {
       // Set loading to false after form submission
       setLoading(false);
@@ -82,7 +82,7 @@ const ContactUsForm = () => {
     <section
       className="contact-us-form m-0 sm:m-20 py-6 px-4 bg-cover bg-no-repeat xl-custom:px-10 relative sm:rounded-2xl"
       style={{
-        backgroundColor: '#0e1642',
+        backgroundColor: "#0e1642",
       }}
     >
       <div className="absolute inset-0 bg-[#0e1642] opacity-60 sm:rounded-2xl"></div>

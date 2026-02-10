@@ -1,12 +1,12 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const RoofingContentThree: React.FC = () => {
   return (
     <section
       id="section-services"
       className="jarallax text-light padding-zero"
-      style={{ backgroundColor: '#ffffff' }}
+      style={{ backgroundColor: "#ffffff" }}
     >
       <div className="flex items-center justify-center min-h-screen px-4 lg:px-20">
         <div className="flex-1 max-w-6xl">
@@ -115,7 +115,7 @@ const RoofingContentThree: React.FC = () => {
               </div>
               <div className="relative">
                 <Image
-                  src="/roofing-after.jpg" 
+                  src="/roofing-after.jpg"
                   alt="After"
                   width={400} // Set explicit width for optimization
                   height={350} // Set explicit height for optimization

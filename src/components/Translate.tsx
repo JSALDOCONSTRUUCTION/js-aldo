@@ -1,10 +1,10 @@
-'use client'; // Mark the component as a client-side component
+"use client"; // Mark the component as a client-side component
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Translate: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState<string>('English');
+  const [selectedLanguage, setSelectedLanguage] = useState<string>("English");
 
   // Handle scroll event to close the dropdown when scrolling
   useEffect(() => {
@@ -14,10 +14,10 @@ const Translate: React.FC = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [isOpen]);
 
@@ -42,25 +42,25 @@ const Translate: React.FC = () => {
 
       <div
         className={`${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
+          isOpen ? "translate-x-0" : "translate-x-full"
         } fixed top-0 right-0 w-64 h-full bg-gray-800 text-white p-4 transition-transform duration-300 z-40`}
       >
         <h2 className="text-xl font-semibold mb-4">Select Language</h2>
         <ul>
           <li
-            onClick={() => handleLanguageSelect('English')}
+            onClick={() => handleLanguageSelect("English")}
             className="cursor-pointer hover:text-blue-400 mb-3"
           >
             English
           </li>
           <li
-            onClick={() => handleLanguageSelect('Spanish')}
+            onClick={() => handleLanguageSelect("Spanish")}
             className="cursor-pointer hover:text-blue-400 mb-3"
           >
             Spanish
           </li>
           <li
-            onClick={() => handleLanguageSelect('French')}
+            onClick={() => handleLanguageSelect("French")}
             className="cursor-pointer hover:text-blue-400 mb-3"
           >
             French

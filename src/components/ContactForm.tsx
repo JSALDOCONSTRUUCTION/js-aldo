@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { Oval } from 'react-loader-spinner'; // Loader import
+import React, { FC } from "react";
+import { Oval } from "react-loader-spinner"; // Loader import
 
 // Define the FormData type for form state
 interface FormData {
@@ -9,7 +9,7 @@ interface FormData {
   phone: string;
   service: string;
   requirements: string;
-} 
+}
 
 // Define the props for the ContactForm component
 interface ContactFormProps {
@@ -18,7 +18,7 @@ interface ContactFormProps {
   handleChange: (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
+    >,
   ) => void; // Function to handle input changes
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void; // Function to handle form submission
   loading: boolean; // Loading state passed from parent

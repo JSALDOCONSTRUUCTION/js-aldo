@@ -1,8 +1,8 @@
-import Copyrights from '@/components/Copyrights';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import LogoSection from '@/components/LogoSection';
-import React from 'react';
+import Copyrights from "@/components/Copyrights";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import LogoSection from "@/components/LogoSection";
+import React from "react";
 
 const page = () => {
   return (
@@ -12,7 +12,7 @@ const page = () => {
       {/* DECKS BLOG Heading with Background */}
       <section className="bg-[#18245b] py-12">
         <h2 className="text-center text-6xl font-bold text-white">
-          DECKS BLOG
+          CARPENTRY BLOG
         </h2>
 
         <span className="relative block mt-4">
@@ -49,8 +49,8 @@ const page = () => {
           It requires staining every three to five years and regular
           maintenance. Pressure-treated lumber is available in #1 Premium Grade
           and #2 Grade. The #1 grade has fewer knots, a better aesthetic
-          appearance, and generally superior quality. Most lumber yards carry
-          #1 grade lumber, while #2 grade lumber, which may have more
+          appearance, and generally superior quality. Most lumber yards carry #1
+          grade lumber, while #2 grade lumber, which may have more
           imperfections, is often available at big box stores at a lower cost.
         </p>
 
@@ -61,8 +61,8 @@ const page = () => {
         <p className="px-4 sm:px-6 md:px-8 lg:px-36 py-6">
           Over the past five to ten years, there has been a major expansion in
           the variety of polymer and synthetic decking materials available.
-          Brands such as Trex, TimberTech, Fiberon, Azek, and many others offer a
-          wide range of styles, colors, and finishes. These materials provide
+          Brands such as Trex, TimberTech, Fiberon, Azek, and many others offer
+          a wide range of styles, colors, and finishes. These materials provide
           long-lasting durability and reduced maintenance. Due to the variety
           available, this blog cannot fully cover all composite and polymer
           decking options in detail.
@@ -76,12 +76,12 @@ const page = () => {
           <li>
             Check with your local building department to understand the
             requirements for building a deck. Some departments provide design
-            guidelines and may take four months or longer to approve deck
-            plans, so start early.
+            guidelines and may take four months or longer to approve deck plans,
+            so start early.
           </li>
           <li>
-            Ensure you have a current property survey available before
-            beginning the process.
+            Ensure you have a current property survey available before beginning
+            the process.
           </li>
           <li>
             Hire a licensed designer or exterior design professional for deck
@@ -102,9 +102,8 @@ const page = () => {
         </p>
       </section>
 
-      
-<section className="w-full h-11 bg-[#18245b]"></section>
-<LogoSection />
+      <section className="w-full h-11 bg-[#18245b]"></section>
+      <LogoSection />
       <Footer />
       <Copyrights />
     </>

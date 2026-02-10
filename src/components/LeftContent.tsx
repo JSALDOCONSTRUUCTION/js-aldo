@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const LeftContent = () => {
   return (
@@ -38,19 +38,18 @@ const LeftContent = () => {
 
         {/* Hearth Banner */}
         <div className="flex justify-left">
-  <a
-    href="https://app.gethearth.com/partners/js-aldo-construction?utm_campaign=51999&utm_content=darkblue&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      src="https://app.gethearth.com/contractor_images/js-aldo-construction/banner.jpg?size_id=700x110&color=darkblue"
-      alt="Home Improvement Financing Banner"
-      className="w-[300px] h-auto sm:w-[400px] md:w-[400px] lg:w-[500px]"
-    />
-  </a>
-</div>
-
+          <a
+            href="https://app.gethearth.com/partners/js-aldo-construction?utm_campaign=51999&utm_content=darkblue&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://app.gethearth.com/contractor_images/js-aldo-construction/banner.jpg?size_id=700x110&color=darkblue"
+              alt="Home Improvement Financing Banner"
+              className="w-[300px] h-auto sm:w-[400px] md:w-[400px] lg:w-[500px]"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

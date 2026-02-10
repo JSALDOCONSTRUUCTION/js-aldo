@@ -1,11 +1,11 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react'; // React components
-import 'swiper/css'; // Swiper core styles
-import 'swiper/css/navigation'; // Navigation styles
-import 'swiper/css/autoplay'; // Autoplay styles (optional)
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react"; // React components
+import "swiper/css"; // Swiper core styles
+import "swiper/css/navigation"; // Navigation styles
+import "swiper/css/autoplay"; // Autoplay styles (optional)
 
-import { Navigation, Autoplay } from 'swiper/modules'; // Import modules correctly for Swiper >= v7
-import Image from 'next/image'; // Next.js Image optimization
+import { Navigation, Autoplay } from "swiper/modules"; // Import modules correctly for Swiper >= v7
+import Image from "next/image"; // Next.js Image optimization
 
 const SwiperSlider: React.FC = () => {
   return (
@@ -72,8 +72,6 @@ const SwiperSlider: React.FC = () => {
       </Swiper>
 
       {/* Navigation Buttons */}
-    
-    
     </section>
   );
 };

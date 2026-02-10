@@ -1,8 +1,8 @@
-import React from 'react';
-import { FaPhone, FaEnvelope, FaGlobe } from 'react-icons/fa'; // Importing the necessary icons
-import Socialicons from './Socialicons';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import { FaPhone, FaEnvelope, FaGlobe } from "react-icons/fa"; // Importing the necessary icons
+import Socialicons from "./Socialicons";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
                 </a>
               </p>
               <p className="text-sm pb-3">
-                <span className="text-red-500">REG.NO:</span>{' '}
+                <span className="text-red-500">REG.NO:</span>{" "}
                 <span className="text-white">13VH031133100</span>
               </p>
             </div>

@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules'; // Correct import
-import 'swiper/css'; // Import Swiper styles
-import 'swiper/css/navigation'; // Import Swiper navigation styles
-import { FaStar, FaQuoteLeft } from 'react-icons/fa'; // Icon imports
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules"; // Correct import
+import "swiper/css"; // Import Swiper styles
+import "swiper/css/navigation"; // Import Swiper navigation styles
+import { FaStar, FaQuoteLeft } from "react-icons/fa"; // Icon imports
 
 const ReviewsSlider: React.FC = () => {
   return (

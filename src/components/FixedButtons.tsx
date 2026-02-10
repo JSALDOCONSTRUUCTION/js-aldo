@@ -12,7 +12,7 @@ const FixedButtons: React.FC = () => {
 
       <div className="fixed right-0 bottom-[110px] bg-[#186ba2] text-white border border-white p-2.5 text-center font-sans z-[1000] min-w-[180px] flex items-center">
         <i className="fas fa-quote-left mr-2 text-white"></i> {/* Quote icon */}
-        <a href="contact-us.html" className="text-white no-underline">
+        <a href="/contact-us" className="text-white no-underline">
           GET A QUOTE
         </a>
       </div>

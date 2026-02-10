@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <a href="/window" className="text-white hover:text-gray-300">
-                    Windows
+                    Windowsd
                   </a>
                 </li>
                 <li>

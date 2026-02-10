@@ -8,7 +8,7 @@ const Copyrights: React.FC = () => {
       {/* Left Side - Copyright Text */}
       <div className="flex justify-center items-center h-full w-full">
         <p className="text-md text-center">
-          © Copyright 2024 JS Aldo&apos;s Construction.All Rights Reserved.
+          © Copyright 2026 JS Aldo&apos;s Construction.All Rights Reserved.
         </p>
       </div>
     </footer>

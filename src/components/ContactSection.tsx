@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ContactSection: React.FC = () => {
@@ -9,11 +10,14 @@ const ContactSection: React.FC = () => {
       </div>
 
       {/* Right Section */}
-      <div className="mt-4 sm:mt-0">
-        <button className="border border-white text-white py-2 px-6 rounded-md font-bold hover:bg-white hover:text-[#a53748] transition duration-300">
-          CONTACT US NOW
-        </button>
-      </div>
+     <div className="mt-4 sm:mt-0">
+  <Link
+    href="/contact-us"
+    className="inline-block border border-white text-white py-2 px-6 rounded-md font-bold hover:bg-white hover:text-[#a53748] transition duration-300"
+  >
+    CONTACT US NOW
+  </Link>
+</div>
     </section>
   );
 };

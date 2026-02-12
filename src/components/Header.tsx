@@ -21,7 +21,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo */}
         <Link href="/">
-          <Image src="/logo.png" alt="Logo" width={180} height={80} />
+          <Image src="/log.jpg" alt="Logo" width={180} height={80} />
         </Link>
         {/* Centered Navigation Menu (Visible After 1280px) */}
         <div className="hidden xl:flex flex-grow justify-center space-x-4 items-center">

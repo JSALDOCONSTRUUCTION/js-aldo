@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <div className="flex flex-col items-start space-y-4">
               <div className="text-xl font-semibold">
                 <Image
-                  src="/logo.png"
+                  src="/log.jpg"
                   alt="Logo"
                   width={128} // Width in pixels
                   height={64} // Height in pixels

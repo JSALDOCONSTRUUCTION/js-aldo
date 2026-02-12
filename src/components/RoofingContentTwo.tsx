@@ -2,6 +2,7 @@ import React from "react";
 import RoofingContentThree from "./RoofingContentThree";
 import RoofingFaq from "./RoofingFaq";
 import Image from "next/image";
+import RoofingLogo from "./RoofingLogo";
 
 const RoofingContentTwo = () => {
   return (
@@ -9,22 +10,11 @@ const RoofingContentTwo = () => {
       {/* Header Section */}
 
       {/* Content Section */}
-      <div className="flex flex-col lg:flex-row-reverse items-center gap-8 px-8 py-12">
-        {/* Right Image */}
-        <div className="flex-1 flex justify-center">
-          <Image
-            src="/roofing11.JPG"
-            alt="Roofing Services"
-            width={450} // Set explicit width for optimization
-            height={300} // Set explicit height for optimization
-            className="object-cover rounded-lg shadow-lg"
-          />
-        </div>
-
-        {/* Left Content */}
-        <div className="flex-1 px-4 lg:px-20 lg:flex lg:flex-col lg:justify-center">
+    <div className="flex items-center justify-center min-h-screen px-4 lg:px-20">
+        <div className="flex-1 max-w-6xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
-            Commercial Roofing
+            JS Aldo&apos;s Construction roofing packages based <br /> on
+            different price points
           </h2>
 
           <div className="flex justify-center items-center mt-2">
@@ -34,34 +24,54 @@ const RoofingContentTwo = () => {
             <div className="border-t-2 border-black/60 w-1/6"></div>
           </div>
 
-          {/* Content Section */}
-          <div className="flex flex-col justify-center items-center mt-6 text-gray-700 leading-relaxed text-center sm:text-left sm:ml-4 md:ml-0">
-            <ul className="list-none pl-4 mt-2">
-              <li>
-                <strong>• TPO and PVC Systems</strong>
-              </li>
-              <li>
-                <strong>• Asphalt Systems for Smaller Roofs</strong>
-              </li>
-              <li>
-                <strong>• Complete Tear-Offs</strong>
-              </li>
-              <li>
-                <strong>• Coatings</strong>
-              </li>
-              <li>
-                <strong>• Repairs and Maintenance Plans:</strong>
-                <ul className="list-none mt-2">
-                  <li>• Emergency Repairs</li>
-                  <li>• Snow Removal</li>
-                  <li>• Coating Plans</li>
-                </ul>
-              </li>
-            </ul>
-            <p className="mt-4">
-              Please contact JS Aldo&apos;s Construction today for your free
-              roof estimate.
-            </p>
+          {/* Flex container for content and images */}
+          <div className="flex flex-col lg:flex-row mt-6 gap-32">
+            {/* Content Section */}
+            <div className="flex-1 text-gray-700 leading-relaxed text-center sm:text-left sm:ml-4 md:ml-0">
+              <p>
+                JS Aldo Construction offers price point packages based on a good, better and best rating.
+              </p>
+              <p className="font-bold">
+                All roofing packages come with the JS Aldo 15 Year Platinum Warranty.
+              </p>
+              
+              <p className="font-bold">
+                Brands include:
+              </p>
+             
+              <p>
+                GAF / IKO / Tamko / Owens Corning
+              </p>
+             <RoofingLogo />
+            </div>
+
+            {/* Images Section */}
+            <div className="flex-1">
+              <div className="relative mb-6">
+                <Image
+                  src="/roofing-before.jpg"
+                  alt="Before"
+                  width={400} // Set explicit width for optimization
+                  height={350} // Set explicit height for optimization
+                  className="object-cover"
+                />
+                <div className="absolute top-2 left-4 text-white text-xl font-bold">
+                  Before
+                </div>
+              </div>
+              <div className="relative">
+                <Image
+                  src="/roofing-after.jpg"
+                  alt="After"
+                  width={400} // Set explicit width for optimization
+                  height={350} // Set explicit height for optimization
+                  className="object-cover"
+                />
+                <div className="absolute top-2 left-4 text-white text-xl font-bold">
+                  After
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

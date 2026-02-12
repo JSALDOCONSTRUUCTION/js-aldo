@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import RoofingLogo from "./RoofingLogo";
 
 const RoofingContentThree: React.FC = () => {
   return (
@@ -27,76 +28,20 @@ const RoofingContentThree: React.FC = () => {
             {/* Content Section */}
             <div className="flex-1 text-gray-700 leading-relaxed text-center sm:text-left sm:ml-4 md:ml-0">
               <p>
-                JS Aldo&apos;s Construction offers a few different roofing
-                packages based on different price points.
+                JS Aldo Construction offers price point packages based on a good, better and best rating.
               </p>
               <p className="font-bold">
-                Our economical, or base package, is a great bargain for those on
-                a budget:
+                All roofing packages come with the JS Aldo 15 Year Platinum Warranty.
               </p>
-              <ul className="list-none pl-4 mt-2">
-                <li>
-                  • Ice and water shield: Carlisle WIP 100 Ice and water shield
-                  or equivalent
-                </li>
-                <li>
-                  • Synthetic Underlayment: Distributor brand (ABC, Beacon)
-                </li>
-                <li>
-                  • Shingles: GAF Timberline HDZ, Owens Corning Duration, IKO
-                  Cambridge, or Tamko Titan XT
-                </li>
-                <li>
-                  • JS Aldo&apos;s Construction Platinum Warranty: 10 years
-                  against installation-related issues
-                </li>
-                <p className="font-bold">
-                  Our second-level pricing is a system offering where all
-                  components must be from <br />
-                  the same manufacturer, enabling the consumer to purchase an
-                  additional <br /> manufacturer&apos;s warranty if desired:
-                </p>
-                <li>
-                  • Repairs and Maintenance Plans:
-                  <ul className="list-none mt-2">
-                    <li>• Ice and water shield: GAF Weatherwatch</li>
-                    <li>• Synthetic Underlayment: GAF FeltBuster</li>
-                    <li>• Shingles: GAF Timberline HDZ</li>
-                    <li>• Caps: GAF Seal-A-Ridge</li>
-                    <li>
-                      • Ridge Venting (if applicable): GAF Cobra Exhaust Vent
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+              
               <p className="font-bold">
-                Our third-level pricing is also a system package where all
-                components are from <br />
-                the same manufacturer, but it is their premium grade products:
+                Brands include:
               </p>
-              <li>
-                • Repairs and Maintenance Plans:
-                <ul className="list-none mt-2">
-                  <li>• Ice and water shield: GAF Weatherwatch</li>
-                  <li>• Synthetic Underlayment: GAF FeltBuster</li>
-                  <li>• Shingles: GAF Timberline HDZ or UHDZ</li>
-                  <li>• Caps: GAF Seal-A-Ridge / Timbertex</li>
-                  <li>
-                    • Ridge Venting (if applicable): GAF Cobra Exhaust Vent or
-                    equivalent
-                  </li>
-                </ul>
-              </li>
+             
               <p>
-                The same grade systems can be assembled using any
-                manufacturer&apos;s product line. Manufacturers design their
-                shingles and accessories to perform at their peak when used as a
-                system.
+                GAF / IKO / Tamko / Owens Corning
               </p>
-              <p>
-                Please contact JS Aldo&apos;s Construction today for your free
-                roof estimate.
-              </p>
+             <RoofingLogo />
             </div>
 
             {/* Images Section */}

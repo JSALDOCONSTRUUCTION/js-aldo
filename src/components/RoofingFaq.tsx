@@ -27,7 +27,7 @@ const RoofingFaq: React.FC = () => {
     {
       question: "Do I need a permit to replace my roof?",
       answer:
-        "Answer: In most areas, yes, you will need a permit to replace your roof. Regulations vary by location, so it's important to check with your local building department or contractor to ensure compliance with local codes and requirements.",
+        "Answer: No. In the state of NJ, residential roofing permits are not necessary unless it is a multi-unit condominium or townhouse",
     },
   ];
 

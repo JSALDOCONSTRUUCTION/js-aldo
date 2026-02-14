@@ -1,16 +1,56 @@
 import Link from "next/link";
+import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
 const LeftContent = () => {
   return (
     <div className="w-full md:w-1/2 px-4 py-6 flex flex-col justify-center">
-      <h2 className="text-3xl font-bold mb-4 text-white">Get in Touch</h2>
+      <h2 className="text-3xl font-bold mb-2 text-white">Get in Touch</h2>
       <h2 className="text-3xl font-bold mb-4 text-white">Book A Service</h2>
-      <p className="text-2xl text-white mb-4">
+
+      <p className="text-xl text-white mb-6">
         The latest tips, trends and resources!
       </p>
 
-      {/* List of items with dots */}
-      <div className="space-y-4 mb-4 text-white">
+      {/* Address Section */}
+      <div className="text-sm text-gray-200 space-y-5 mb-6">
+
+        {/* Main Office */}
+        <div>
+          <p className="text-red-600 font-semibold uppercase tracking-wide">
+            Main Office / Warehouse
+          </p>
+
+          <div className="flex items-start gap-2 mt-2">
+            <FaMapMarkerAlt className="text-red-600 mt-1" />
+            <p>
+              JS Aldo Construction <br />
+              69 Buffalo Ave <br />
+              Paterson, NJ 07503
+            </p>
+          </div>
+        </div>
+
+        {/* Sales Office */}
+        <div>
+          <p className="text-red-600 font-semibold uppercase tracking-wide">
+            Sales Office – Wanaque
+          </p>
+
+          <div className="flex items-center gap-2 mt-2">
+            <FaPhone className="text-red-600" />
+            <a
+              href="tel:+12016555721"
+              className="hover:text-white transition"
+            >
+              201-655-5721
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      {/* List Section */}
+      <div className="space-y-4 mb-6 text-white">
         <p className="flex items-center">
           <span className="w-3 h-3 bg-white rounded-full mr-3"></span>
           Featured Projects
@@ -23,9 +63,6 @@ const LeftContent = () => {
           <span className="w-3 h-3 bg-white rounded-full mr-3"></span>
           Special Event Announcements
         </p>
-        <p className="text-2xl text-white mb-4">
-          The latest tips, trends and resources!
-        </p>
       </div>
 
       {/* Buttons Section */}
@@ -36,8 +73,7 @@ const LeftContent = () => {
           </button>
         </Link>
 
-        {/* Hearth Banner */}
-        <div className="flex justify-left">
+        <div className="flex justify-start">
           <a
             href="https://app.gethearth.com/partners/js-aldo-construction?utm_campaign=51999&utm_content=darkblue&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110"
             target="_blank"

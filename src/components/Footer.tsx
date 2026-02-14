@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import { FaPhone, FaEnvelope, FaGlobe } from "react-icons/fa"; // Importing the necessary icons
+import { FaPhone, FaEnvelope, FaGlobe,FaMapMarkerAlt,  } from "react-icons/fa"; // Importing the necessary icons
 import Socialicons from "./Socialicons";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,22 +12,56 @@ const Footer: React.FC = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
             {/* First Column: Logo and Social Media */}
-            <div className="flex flex-col items-start space-y-4">
-              <div className="text-xl font-semibold">
-                <Image
-                  src="/log.jpg"
-                  alt="Logo"
-                  width={128} // Width in pixels
-                  height={64} // Height in pixels
-                  className="w-32 h-auto"
-                />
-              </div>
-              <Socialicons />
-              <p className="text-sm text-white mt-4">
-                Our professional team delivers top-quality roofing services,
-                specializing in installation, repairs, and maintenance.
-              </p>
-            </div>
+           <div className="flex flex-col items-start space-y-4">
+  <div>
+    <Image
+      src="/log.jpg"
+      alt="JS Aldo Construction Logo"
+      width={128}
+      height={64}
+      className="w-32 h-auto"
+    />
+  </div>
+
+  <Socialicons />
+
+  <div className="text-sm text-gray-300 space-y-5">
+
+    {/* Main Office */}
+    <div>
+      <p className="text-red-600 font-semibold uppercase tracking-wide">
+        Main Office / Warehouse
+      </p>
+
+      <div className="flex items-start gap-2 mt-2">
+        <FaMapMarkerAlt className="text-red-600 mt-1" />
+        <p>
+          JS Aldo Construction <br />
+          69 Buffalo Ave <br />
+          Paterson, NJ 07503
+        </p>
+      </div>
+    </div>
+
+    {/* Sales Office */}
+    <div>
+      <p className="text-red-600 font-semibold uppercase tracking-wide">
+        Sales Office – Wanaque
+      </p>
+
+      <div className="flex items-center gap-2 mt-2">
+        <FaPhone className="text-red-600" />
+        <a
+          href="tel:+12016555721"
+          className="hover:text-white transition"
+        >
+          201-655-5721
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
 
             {/* Second Column: Other Services */}
             <div className="flex flex-col space-y-2">

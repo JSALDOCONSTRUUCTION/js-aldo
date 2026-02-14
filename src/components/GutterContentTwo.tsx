@@ -90,7 +90,7 @@ const Roofing: React.FC = () => {
       </div>
       <div className="flex-1 px-4 lg:px-20">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
-          Gutter Cleaning Services
+         Typical Gutter Colors
         </h2>
         <div className="flex justify-center items-center mt-2">
           {/* Underline with dot */}

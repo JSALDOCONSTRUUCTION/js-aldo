@@ -13,7 +13,7 @@ const WindowContentOne = () => {
         {/* Right Image */}
         <div className="flex-1 flex justify-center">
           <Image
-            src="/roofing5.jpg"
+            src="/gallery/image7.jpg"
             alt="Roofing Services"
             width={450} // Set width for the image
             height={300} // Set height for the image

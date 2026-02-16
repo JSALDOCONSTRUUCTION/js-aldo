@@ -53,7 +53,7 @@ const page = () => {
           {/* Right Content */}
           <div className="flex-1 px-4 lg:px-20">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
-              Carpentry
+              Masonry
             </h2>
             <div className="flex justify-center items-center mt-2">
               {/* Underline with dot */}
@@ -63,12 +63,14 @@ const page = () => {
             </div>
 
             <div className="flex flex-col justify-center items-center mt-6 text-gray-700 leading-relaxed sm:text-left">
-              <p className="mt-4">• Decks</p>
-              <p className="mt-4">• Framing</p>
-              <p className="mt-4">• Walls</p>
-              <p className="mt-4">• Additions</p>
-              <p className="mt-4">• Kitchens</p>
-              <p className="mt-4">• Bathrooms</p>
+              <p className="mt-4">• Patios, poured or paved</p>
+              <p className="mt-4">• Sidewalks</p>
+              <p className="mt-4">• Retaining walls</p>
+              <p className="mt-4">• Repairs</p>
+              <p className="mt-4">• Stonework</p>
+              <p className="mt-4">• Pavers</p>
+              <p className="mt-4">• Bluestone</p>
+              <p className="mt-4">• Railings</p>
             </div>
           </div>
         </div>

@@ -40,12 +40,12 @@ const ReviewsSlider: React.FC = () => {
               </div>
               {/* Customer Review */}
               <p className="text-lg text-gray-700 mb-4">
-                &quot;The best roofing company we&apos;ve ever worked with!
-                Excellent service, quick installation, and a team that truly
-                cares about the quality of their work.&quot;
+                &quot;Great price, prompt professional work. They are doing my
+                roof right now as I am writing this. Quality employees and
+                quality work. You will not be disappointed. &quot;
               </p>
               {/* Customer Name */}
-              <p className="text-lg font-bold text-gray-800">John Doe</p>
+              <p className="text-lg font-bold text-gray-800">William L</p>
             </div>
           </div>
         </SwiperSlide>
@@ -77,6 +77,34 @@ const ReviewsSlider: React.FC = () => {
                 have asked for a better roofing experience.&quot;
               </p>
               <p className="text-lg font-bold text-gray-800">Sarah Lee</p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex justify-center items-center p-6 bg-gray-100 rounded-xl shadow-md">
+            <div className="w-full text-center">
+              <div className="flex justify-center items-center mb-4 text-4xl text-gray-500">
+                <FaQuoteLeft />
+              </div>
+              <p className="text-lg text-gray-700 mb-4">
+                &quot;Called them up for estimate and got my roof done the next
+                week. Did it all in one day and gave us a great price. Would def
+                recommend to anyone :)&quot;
+              </p>
+              <p className="text-lg font-bold text-gray-800">Nathalie Suarez</p>
+            </div>
+          </div>
+        </SwiperSlide>
+          <SwiperSlide>
+          <div className="flex justify-center items-center p-6 bg-gray-100 rounded-xl shadow-md">
+            <div className="w-full text-center">
+              <div className="flex justify-center items-center mb-4 text-4xl text-gray-500">
+                <FaQuoteLeft />
+              </div>
+              <p className="text-lg text-gray-700 mb-4">
+                &quot;Aldo is great and does phenomenal work, excellent craftsmanship.&quot;
+              </p>
+              <p className="text-lg font-bold text-gray-800">Doc Hart (Dochart)</p>
             </div>
           </div>
         </SwiperSlide>

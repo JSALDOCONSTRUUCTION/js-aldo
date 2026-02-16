@@ -12,13 +12,14 @@ const page = () => {
       <section className="bg-gray-50">
         <Header />
         <FixedButtons />
+
         {/* Top Image */}
         <div className="relative w-full h-[50vh] overflow-hidden">
           <Image
             src="/carpentry2.jpg"
-            alt="Roofing"
-            width={1920} // Full-width of the image (adjust based on layout)
-            height={800} // Adjust height to maintain aspect ratio
+            alt="Carpentry"
+            width={1920}
+            height={800}
             className="object-cover h-[50vh] w-full"
           />
         </div>
@@ -30,7 +31,6 @@ const page = () => {
             Pennsylvania
           </h1>
           <span className="relative block mt-4">
-            {/* Underline with dot */}
             <span className="absolute left-0 right-0 -bottom-8 flex justify-center">
               <div className="border-t-2 border-black/60 w-1/6"></div>
               <div className="mx-2 bg-red-500 w-1 h-1"></div>
@@ -40,14 +40,15 @@ const page = () => {
         </div>
 
         {/* Content Section */}
-        <div className="flex flex-col lg:flex-row items-center gap-8 px-8 py-12">
+        <div className="flex flex-col lg:flex-row items-center gap-12 px-8 py-12">
+          
           {/* Left Image */}
           <div className="flex-1 flex justify-center">
             <Image
               src="/carpentry3.jpg"
-              alt="Roofing Services"
-              width={450} // Specify the width of the image
-              height={300} // Specify the height of the image
+              alt="Carpentry Services"
+              width={450}
+              height={300}
               className="object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -57,23 +58,49 @@ const page = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
               CARPENTRY
             </h2>
-            <div className="flex justify-center items-center mt-2">
-              {/* Underline with dot */}
+
+            <div className="flex justify-center items-center mt-2 mb-10">
               <div className="border-t-2 border-black/60 w-1/6"></div>
               <div className="mx-2 bg-red-500 w-1 h-1"></div>
               <div className="border-t-2 border-black/60 w-1/6"></div>
             </div>
 
-            <div className="flex flex-col justify-center items-center mt-6 text-gray-700 leading-relaxed sm:text-left">
-              <p className="mt-4">• Decks</p>
-              <p className="mt-4">• Framing</p>
-              <p className="mt-4">• Walls</p>
-              <p className="mt-4">• Additions</p>
-              <p className="mt-4">• Kitchens</p>
-              <p className="mt-4">• Bathrooms</p>
+            {/* Side-by-Side Sections */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-gray-700 leading-relaxed">
+              
+              {/* Interior Carpentry */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-[#b2303c]">
+                  Interior Carpentry
+                </h3>
+                <ul className="space-y-2">
+                  <li>• Molding</li>
+                  <li>• Doors</li>
+                  <li>• Wainscoting</li>
+                  <li>• Framing</li>
+                  <li>• Painting</li>
+                  <li>• Kitchens</li>
+                  <li>• Bathrooms</li>
+                </ul>
+              </div>
+
+              {/* Exterior Carpentry */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-[#b2303c]">
+                  Exterior Carpentry
+                </h3>
+                <ul className="space-y-2">
+                  <li>• Decks</li>
+                  <li>• Pergolas</li>
+                  <li>• Fascia and trim replacement</li>
+                  <li>• Exterior painting</li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </div>
+
         <ContactUsForm />
         <Footer />
         <Copyrights />
